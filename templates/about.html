@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}About | Student Registration Portal{% endblock %}
+
+{% block content %}
+<section class="about-page">
+    <h1>About This Project</h1>
+
+    <div class="about-card">
+        <h2>Our Mission</h2>
+        <p>
+            The Student Registration Portal is a demo project developed during the Python Development
+            Internship. Its goal is to demonstrate core Flask concepts such as routing, templates,
+            forms, and flash messaging through a simple, real-world use case — registering and viewing
+            student records.
+        </p>
+    </div>
+
+    <div class="about-card">
+        <h2>Technologies Used</h2>
+        <ul class="tech-list">
+            <li>Flask</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </div>
+
+    <div class="about-card">
+        <h2>Project Highlights</h2>
+        <ul class="tech-list">
+            <li>No database — data stored temporarily in a Python list</li>
+            <li>Flash messages for user feedback</li>
+            <li>Responsive UI for mobile and desktop</li>
+            <li>Custom 404 error page</li>
+        </ul>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Home | Student Registration Portal{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Student Registration Portal</h1>
+        <p>A simple and clean platform to register students and manage their information — built with Flask, HTML &amp; CSS.</p>
+        <div class="hero-buttons">
+            <a href="{{ url_for('register') }}" class="btn btn-primary">Register Student</a>
+            <a href="{{ url_for('view_students') }}" class="btn btn-secondary">View Students</a>
+        </div>
+    </div>
+</section>
+
+<section class="about-section">
+    <h2>About This Project</h2>
+    <p>
+        This portal allows students to register their details including Name, Email, Mobile Number,
+        and Course. All registered students can be viewed on the Students page. This is a demo project
+        built using Flask, HTML, CSS, Flash Messages, Templates, and Routing — with no database, data is
+        stored temporarily in a Python list.
+    </p>
+</section>
+{% endblock %}
